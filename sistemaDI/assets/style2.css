@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    height: 100%;
+}
+
+.pagina {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.area-login {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.area-imagem {
+    width: 50%;
+    background-image: url(./img/fundoestoque.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.cartao {
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.topo-cartao {
+    padding: 25px 25px 15px;
+}
+
+.logo-tenis {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icone-tenis {
+    color: #631c22;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.titulo-sistema {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.subtitulo {
+    color: #777;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.corpo-cartao {
+    padding:20px;
+}
+
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+.campo-com-icone {
+    position: relative;
+}
+
+.campo-texto {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.campo-texto:focus {
+    border-color: #e63946;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+}
+
+.icone-campo {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+
+.botao-entrar {
+    width: 100%;
+    padding: 12px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-entrar:hover {
+    background-color: #c1121f;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .pagina {
+        flex-direction: column;
+    }
+    
+    .area-login {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .area-imagem {
+        display: none;
+    }
+}

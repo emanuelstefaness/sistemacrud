@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Tênis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style2.css">
+</head>
+<body>
+    <main class="pagina">
+        <!-- Área de Login -->
+        <section class="area-login">
+            <article class="cartao">
+                <header class="topo-cartao">
+                    <div class="logo-tenis">
+                        <i class="fas fa-running icone-tenis" aria-hidden="true"></i>
+                        <h1 class="titulo-sistema">HypeShoes</h1>
+                    </div>
+                    <h2 class="titulo-boas-vindas">Gerenciador de Estoque</h2>
+                    <p class="subtitulo">Entre com suas credenciais para acessar o sistema</p>
+                </header>
+                
+                <div class="corpo-cartao">
+                    <form id="login" aria-label="Formulário de login do sistema">
+                        <div class="grupo-campo">
+                            <label class="rotulo" for="usuario">Usuário</label>
+                            <div class="campo-com-icone">
+                                <i class="fas fa-user icone-campo" aria-hidden="true"></i>
+                                <input type="text" class="campo-texto" id="usuario" placeholder="Digite seu usuário" required aria-label="Campo de usuário">
+                            </div>
+                        </div>
+                        
+                        <div class="grupo-campo">
+                            <label class="rotulo" for="senha">Senha</label>
+                            <div class="campo-com-icone">
+                                <i class="fas fa-lock icone-campo" aria-hidden="true"></i>
+                                <input type="password" class="campo-texto" id="senha" placeholder="Digite sua senha" required aria-label="Campo de senha">
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="botao-entrar" aria-label="Entrar no sistema">Entrar</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+        
+        <section class="area-imagem">
+        </section>
+    </main>
+<script src="./assets/login.js"></script>
+</body>
+</html>
