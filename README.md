@@ -63,3 +63,7 @@ Instalação e Uso
 
 4. Após o login, você será redirecionado para a página principal (index.html), onde poderá gerenciar o estoque.
 
+# Explicação do código
+
+https://youtu.be/NuZX7OJBO84
+
