@@ -1,4 +1,4 @@
-// Seleciona elementos do DOM
+// Seleciona elementos do DOM - DADOS IMPORTANTES
 var form = document.getElementById("myform"),
     imgInput = document.querySelector(".img"),
     file = document.getElementById("imgInput"),
@@ -12,13 +12,13 @@ var form = document.getElementById("myform"),
     marcaFilter = document.getElementById('marcaFilter'),
     tamanhoFilter = document.getElementById('tamanhoFilter');
 
-// Recupera dados do localStorage ou cria array vazio
+// Recupera dados do localStorage ou cria array vazio - CARREGA OS DADOS SALVOS
 let getData = localStorage.getItem('tenis') ? JSON.parse(localStorage.getItem('tenis')) : [];
 
 let isEdit = false, editId;
 let imgUrl = "./tenisexemplo.png";
 
-// Botão para adicionar campos de tamanho dinâmicos
+// Botão para adicionar campos de tamanho dinâmicos - 
 document.querySelector('.adicionar-tamanho').addEventListener('click', function() {
     const novoCampo = document.createElement('div');
     novoCampo.className = 'tamanho-estoque d-flex gap-2 mb-2';
